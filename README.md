@@ -1,3 +1,9 @@
 # my-organisation
 
-## 2 folders
+## backend
+
+`cd backend && npm run start`
+
+## fontend
+
+`cd frontend/my-organisation && npm install && npm start`
