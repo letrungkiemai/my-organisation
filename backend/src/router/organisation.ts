@@ -9,7 +9,7 @@ import { Tree } from "../model/tree";
 const router = express.Router();
 
 router.get(
-  "/printtree",
+  "/tree",
   async (
     req: express.Request,
     res: express.Response,

@@ -1,12 +1,14 @@
 import express from "express";
 import bodyParser from "body-parser";
 import organisation from "./router";
+import cors from "cors";
 
 class Server {
   private app;
 
   constructor() {
     this.app = express();
+
     this.config();
     this.routerConfig();
   }
@@ -17,6 +19,7 @@ class Server {
   }
 
   private routerConfig() {
+    this.app.use(cors());
     this.app.use("/api", organisation);
   }
 
